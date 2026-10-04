@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Cá Nhân</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 20px;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            color: #333;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background: #667eea;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 25px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: #764ba2;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Xin chào! 👋</h1>
+        <p>Chào mừng bạn đến với trang web của tôi</p>
+    </header>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>👨‍💻 Về tôi</h2>
+            <p>
+                Xin chào! Tôi là một người yêu thích công nghệ,
+                lập trình và khám phá những điều mới mẻ.
+                Đây là một trang web nhỏ được tạo bằng HTML và CSS.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>🚀 Kỹ năng</h2>
+
+            <div class="skills">
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">Python</span>
+                <span class="skill">Thiết kế web</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>🎯 Mục tiêu</h2>
+            <p>
+                Học hỏi thêm nhiều kiến thức về lập trình,
+                xây dựng những website đẹp và tạo ra các
+                sản phẩm hữu ích.
+            </p>
+
+            <a href="#" class="button" onclick="hello()">Bấm vào đây</a>
+        </div>
+
+    </div>
+
+    <footer>
+        © 2026 - Trang web được tạo bằng HTML & CSS ❤️
+    </footer>
+
+    <script>
+        function hello() {
+            alert("Xin chào! Cảm ơn bạn đã ghé thăm website 🎉");
+        }
+    </script>
+
+</body>
+</html>
